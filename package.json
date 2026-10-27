@@ -13,7 +13,8 @@
     "db:start": "supabase start",
     "db:stop": "supabase stop",
     "db:status": "supabase status",
-    "db:reset": "supabase db reset"
+    "db:reset": "supabase db reset",
+    "test:rls": "node --test tests/rls/*.test.ts"
   },
   "keywords": [
     "supabase",
@@ -30,6 +31,7 @@
     "dotenv": "^18.0.9"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.5.12",
     "@types/node": "^22.13.4",
     "supabase": "^2.15.8",
     "tsx": "^4.23.15",
